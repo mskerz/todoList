@@ -7,7 +7,6 @@ function Todo({ id, todo, onDelete }) {
   const [isComplete, setIsComplete] = useState(false);
   const [isFading, setIsFading] = useState(false);
 
-  console.log(id);
   const handleCheckTask = () => {
     setIsComplete(!isComplete);
     
@@ -31,16 +30,18 @@ function Todo({ id, todo, onDelete }) {
   }, [isComplete, id, onDelete]);
   
   return (
-    <div className={`d-flex justify-content-between align-items-center todo-item ${isFading ? 'fade-out' : ''}`}>
-      <div className="d-flex align-items-center" style={{ textDecoration: isComplete ? "line-through" : "none" }}>
+    <div className={`d-flex justify-content-between align-items-center col-6 todo-item ${isFading ? 'fade-out' : ''}`}>
+      
+      <div className="d-flex align-items-center " style={{ textDecoration: isComplete ? "line-through" : "none" , }}>
         <input
           type="checkbox"
+          className="form-check-input me-1"
           checked={isComplete}
           onChange={handleCheckTask}
         />
         <span className="ms-2">{todo}</span>
       </div>
-      <button className="btn-close ml-auto" onClick={() => onDelete(id)}></button>
+      <button  className="btn btn-danger" onClick={() => onDelete(id)}> <i className="bi bi-trash"></i> </button>
     </div>
   );
 }

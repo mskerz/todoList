@@ -13,12 +13,14 @@ function AddTodo({ addTodo }) {
   return (
     <>
         <form onSubmit={handleSubmit}>
-          <div className='d-flex flex-row'>
-          <input className='form-control'
+          <div className='d-flex flex-row align-items-center'>
+          <input className='form-control '
                 type="text"
                 value={todo}
                 onChange={(e) => setTodo(e.target.value)}
                 placeholder="Add new todo"
+                style={{ maxWidth: '50%', borderRadius: 20 }} // กำหนด maxWidth เพื่อไม่ให้ input ยาวเกินไป
+
             />
             &nbsp;
             <button type="submit" style={{borderRadius:20}}><i className="bi bi-plus"></i></button>

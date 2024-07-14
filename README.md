@@ -10,4 +10,4 @@ Currently, two official plugins are available:
 
 
 # Live Demo
-# https://reactify-todo-app.netlify.app/ 
+# https://todo-react-tawny-mu.vercel.app/ 

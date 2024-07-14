@@ -1,0 +1,12 @@
+.todo-item {
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .completed span {
+    text-decoration: line-through;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  

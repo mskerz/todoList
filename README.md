@@ -1,4 +1,5 @@
-# React + Vite
+  # React Very Simple Todo App [![Frontend](https://skillicons.dev/icons?i=vite)]()
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 Very Simple Todo App with Bootstrap
@@ -8,4 +9,5 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-- [view a live demo](https://todo-react-tawny-mu.vercel.app/)
+# Live Demo
+# https://reactify-todo-app.netlify.app/ 

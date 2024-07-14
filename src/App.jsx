@@ -30,6 +30,7 @@ function App() {
       // ตั้งค่าให้ todos ทั้งหมดเป็น complete เมื่อทำการ check all
       sessionStorage.removeItem('todos')
       setTodos([]);
+      idRef.current = 1;
        
     }
   };
